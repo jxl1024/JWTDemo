@@ -65,6 +65,16 @@ namespace JWTDemo.Api
                 app.UseDeveloperExceptionPage();
             }
 
+            #region 添加跨域设置
+            app.UseCors(policy =>
+            {
+                policy.AllowAnyOrigin();//AllowAnyOrigin表示允许所有来源可以跨域
+                policy.AllowAnyHeader();
+                policy.AllowAnyMethod();
+                policy.AllowCredentials();
+            });
+            #endregion
+
             // 启用身份认证
             app.UseAuthentication();
             app.UseMvc();

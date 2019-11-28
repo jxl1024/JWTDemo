@@ -12535,11 +12535,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Project\\JWT认证\\JWTDemoTest\\JWTDemo.Server\\JWTDemo.Server\\JWTDemo.Server.csproj",
+      "projectUniqueName": "F:\\Project\\JWT认证\\JWTDemo\\src\\back\\JWTDemo.Server\\JWTDemo.Server\\JWTDemo.Server.csproj",
       "projectName": "JWTDemo.Server",
-      "projectPath": "F:\\Project\\JWT认证\\JWTDemoTest\\JWTDemo.Server\\JWTDemo.Server\\JWTDemo.Server.csproj",
+      "projectPath": "F:\\Project\\JWT认证\\JWTDemo\\src\\back\\JWTDemo.Server\\JWTDemo.Server\\JWTDemo.Server.csproj",
       "packagesPath": "C:\\Users\\JIANGXIAOLIANG\\.nuget\\packages\\",
-      "outputPath": "F:\\Project\\JWT认证\\JWTDemoTest\\JWTDemo.Server\\JWTDemo.Server\\obj\\",
+      "outputPath": "F:\\Project\\JWT认证\\JWTDemo\\src\\back\\JWTDemo.Server\\JWTDemo.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

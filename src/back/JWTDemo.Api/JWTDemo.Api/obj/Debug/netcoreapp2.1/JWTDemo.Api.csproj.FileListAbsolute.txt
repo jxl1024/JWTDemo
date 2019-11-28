@@ -12,3 +12,17 @@ F:\Project\JWT认证\JWTDemoTest\JWTDemo.Api\JWTDemo.Api\bin\Debug\netcoreapp2.1
 F:\Project\JWT认证\JWTDemoTest\JWTDemo.Api\JWTDemo.Api\obj\Debug\netcoreapp2.1\JWTDemo.Api.dll
 F:\Project\JWT认证\JWTDemoTest\JWTDemo.Api\JWTDemo.Api\obj\Debug\netcoreapp2.1\JWTDemo.Api.pdb
 F:\Project\JWT认证\JWTDemoTest\JWTDemo.Api\JWTDemo.Api\obj\Debug\netcoreapp2.1\JWTDemo.Api.csprojAssemblyReference.cache
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\obj\Debug\netcoreapp2.1\JWTDemo.Api.csproj.CoreCompileInputs.cache
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\obj\Debug\netcoreapp2.1\JWTDemo.Api.RazorAssemblyInfo.cache
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\obj\Debug\netcoreapp2.1\JWTDemo.Api.RazorAssemblyInfo.cs
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\obj\Debug\netcoreapp2.1\JWTDemo.Api.AssemblyInfoInputs.cache
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\obj\Debug\netcoreapp2.1\JWTDemo.Api.AssemblyInfo.cs
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\obj\Debug\netcoreapp2.1\JWTDemo.Api.dll
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\obj\Debug\netcoreapp2.1\JWTDemo.Api.pdb
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\bin\Debug\netcoreapp2.1\JWTDemo.Api.deps.json
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\bin\Debug\netcoreapp2.1\JWTDemo.Api.runtimeconfig.json
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\bin\Debug\netcoreapp2.1\JWTDemo.Api.runtimeconfig.dev.json
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\bin\Debug\netcoreapp2.1\JWTDemo.Api.dll
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\bin\Debug\netcoreapp2.1\JWTDemo.Api.pdb
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\obj\Debug\netcoreapp2.1\JWTDemo.Api.RazorTargetAssemblyInfo.cache
+F:\Project\JWT认证\JWTDemo\src\back\JWTDemo.Api\JWTDemo.Api\obj\Debug\netcoreapp2.1\JWTDemo.Api.csprojAssemblyReference.cache
