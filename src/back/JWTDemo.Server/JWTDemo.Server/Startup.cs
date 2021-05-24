@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using JWTDemo.Server.DatabaseContext;
+﻿using JWTDemo.Server.DatabaseContext;
 using JWTDemo.Server.TokenInfo;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -11,8 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace JWTDemo.Server
 {
@@ -34,16 +30,33 @@ namespace JWTDemo.Server
                 // 从appsettings.json中读取配置文件
                 options.UseSqlServer(Configuration["DbConnection"].ToString());
             });
+
+
             // 注入
-            services.AddSingleton<ITokenHelper, TokenHelper>();
+            services.AddScoped<ITokenHelper, TokenHelper>();
+
+
             // 读取appsettings.json文件
             services.Configure<JWTConfig>(Configuration.GetSection("JWT"));
+
+            JWTConfig config = new JWTConfig();
+            Configuration.GetSection("JWT").Bind(config);
+
             // 启用JWT认证
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer();
+            })
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidIssuer = config.Issuer,
+                        ValidAudience = config.RefreshTokenAudience,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.IssuerSigningKey))
+                    };
+                });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

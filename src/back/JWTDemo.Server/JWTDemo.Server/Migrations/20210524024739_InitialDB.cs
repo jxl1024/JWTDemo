@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace JWTDemo.Server.Migrations
 {
-    public partial class InitialData : Migration
+    public partial class InitialDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -32,17 +32,17 @@ namespace JWTDemo.Server.Migrations
             migrationBuilder.InsertData(
                 table: "User",
                 columns: new[] { "Id", "Age", "CreateDateTime", "CreateUserId", "Password", "Sex", "UpdateDateTime", "UpdateUserId", "UserCode", "UserName" },
-                values: new object[] { 1, 23, new DateTime(2019, 11, 27, 16, 52, 11, 352, DateTimeKind.Local), "System", "System", 1, new DateTime(2019, 11, 27, 16, 52, 11, 353, DateTimeKind.Local), "System", "System", "超级管理员" });
+                values: new object[] { 1, 23, new DateTime(2021, 5, 24, 10, 47, 39, 156, DateTimeKind.Local), "System", "System", 1, new DateTime(2021, 5, 24, 10, 47, 39, 158, DateTimeKind.Local), "System", "System", "超级管理员" });
 
             migrationBuilder.InsertData(
                 table: "User",
                 columns: new[] { "Id", "Age", "CreateDateTime", "CreateUserId", "Password", "Sex", "UpdateDateTime", "UpdateUserId", "UserCode", "UserName" },
-                values: new object[] { 2, 23, new DateTime(2019, 11, 27, 16, 52, 11, 354, DateTimeKind.Local), "System", "123456", 1, new DateTime(2019, 11, 27, 16, 52, 11, 354, DateTimeKind.Local), "System", "admin", "普通管理员" });
+                values: new object[] { 2, 23, new DateTime(2021, 5, 24, 10, 47, 39, 158, DateTimeKind.Local), "System", "123456", 1, new DateTime(2021, 5, 24, 10, 47, 39, 158, DateTimeKind.Local), "System", "admin", "普通管理员" });
 
             migrationBuilder.InsertData(
                 table: "User",
                 columns: new[] { "Id", "Age", "CreateDateTime", "CreateUserId", "Password", "Sex", "UpdateDateTime", "UpdateUserId", "UserCode", "UserName" },
-                values: new object[] { 3, 25, new DateTime(2019, 11, 27, 16, 52, 11, 354, DateTimeKind.Local), "System", "345923", 2, new DateTime(2019, 11, 27, 16, 52, 11, 354, DateTimeKind.Local), "System", "345923", "小红" });
+                values: new object[] { 3, 25, new DateTime(2021, 5, 24, 10, 47, 39, 158, DateTimeKind.Local), "System", "345923", 2, new DateTime(2021, 5, 24, 10, 47, 39, 158, DateTimeKind.Local), "System", "345923", "小红" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

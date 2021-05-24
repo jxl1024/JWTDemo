@@ -26,8 +26,16 @@ namespace JWTDemo.Server.TokenInfo
         public string IssuerSigningKey { get; set; }
 
         /// <summary>
-        /// 令牌过期时间
+        /// 访问令牌过期时间
         /// </summary>
         public int AccessTokenExpiresMinutes { get; set; }
+
+        public string RefreshTokenAudience { get; set; }
+
+        /// <summary>
+        /// 刷新令牌过期时间
+        /// </summary>
+
+        public int RefreshTokenExpiresMinutes { get; set; }
     }
 }

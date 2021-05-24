@@ -25,6 +25,7 @@ namespace JWTDemo.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [AllowAnonymous]
         public List<User> Get()
         {
             List<User> list = _dbContext.Users.ToList();

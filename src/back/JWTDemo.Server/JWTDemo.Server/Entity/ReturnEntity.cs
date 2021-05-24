@@ -11,6 +11,8 @@ namespace JWTDemo.Server.Entity
 
         public string Message { get; set; }
 
-        public string Content { get; set; }
+        // public string Content { get; set; }
+
+        public ComplexToken Token { get; set; }
     }
 }

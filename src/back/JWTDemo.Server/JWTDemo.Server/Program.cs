@@ -14,11 +14,19 @@ namespace JWTDemo.Server
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            var path = Path.GetDirectoryName(typeof(Program).Assembly.Location);
+            var config = new ConfigurationBuilder()
+                .SetBasePath(path)
+                 .AddJsonFile("hosting.json", true, true)
+                .AddJsonFile("appsettings.json", true, true)
+                 .AddJsonFile("appsettings.Development.json", true, true)
+                .Build();
+            CreateWebHostBuilder(args,config).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args, IConfiguration config) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseConfiguration(config)
                 .UseStartup<Startup>();
     }
 }

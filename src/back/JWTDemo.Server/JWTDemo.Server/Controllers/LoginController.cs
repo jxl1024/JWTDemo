@@ -3,6 +3,7 @@ using System.Linq;
 using JWTDemo.Server.DatabaseContext;
 using JWTDemo.Server.Entity;
 using JWTDemo.Server.TokenInfo;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JWTDemo.Server.Controllers
@@ -40,20 +41,31 @@ namespace JWTDemo.Server.Controllers
             User user = _dbContext.Users.FirstOrDefault(func);
             if (null != user && user.Password.Equals(entity.Password))
             {
-                Token token = _tokenHelper.CreateToken(user);
+                //Token token = _tokenHelper.CreateToken(user);
+                ComplexToken token = _tokenHelper.CreateToken(user);
                 return new ReturnEntity()
                 {
                     Code = "1",
                     Message = "成功",
-                    Content = token.TokenContent
+                    Token = token
                 };
             }
             return new ReturnEntity()
             {
                 Code = "0",
-                Message = "失败",
-                Content = ""
+                Message = "失败"
             };
+        }
+
+        /// <summary>
+        /// 这个方法添加了[Authorize]标识，说明调用它需要RefreshToken认证通过
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Authorize]
+        public IActionResult GetAccessToken()
+        {
+            return Ok(_tokenHelper.RefreshToken(Request.HttpContext.User));
         }
     }
 }

@@ -10,14 +10,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JWTDemo.Server.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20191127085211_InitialData")]
-    partial class InitialData
+    [Migration("20210524024739_InitialDB")]
+    partial class InitialDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.11-servicing-32099")
+                .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -56,9 +56,9 @@ namespace JWTDemo.Server.Migrations
                     b.ToTable("User");
 
                     b.HasData(
-                        new { Id = 1, Age = 23, CreateDateTime = new DateTime(2019, 11, 27, 16, 52, 11, 352, DateTimeKind.Local), CreateUserId = "System", Password = "System", Sex = 1, UpdateDateTime = new DateTime(2019, 11, 27, 16, 52, 11, 353, DateTimeKind.Local), UpdateUserId = "System", UserCode = "System", UserName = "超级管理员" },
-                        new { Id = 2, Age = 23, CreateDateTime = new DateTime(2019, 11, 27, 16, 52, 11, 354, DateTimeKind.Local), CreateUserId = "System", Password = "123456", Sex = 1, UpdateDateTime = new DateTime(2019, 11, 27, 16, 52, 11, 354, DateTimeKind.Local), UpdateUserId = "System", UserCode = "admin", UserName = "普通管理员" },
-                        new { Id = 3, Age = 25, CreateDateTime = new DateTime(2019, 11, 27, 16, 52, 11, 354, DateTimeKind.Local), CreateUserId = "System", Password = "345923", Sex = 2, UpdateDateTime = new DateTime(2019, 11, 27, 16, 52, 11, 354, DateTimeKind.Local), UpdateUserId = "System", UserCode = "345923", UserName = "小红" }
+                        new { Id = 1, Age = 23, CreateDateTime = new DateTime(2021, 5, 24, 10, 47, 39, 156, DateTimeKind.Local), CreateUserId = "System", Password = "System", Sex = 1, UpdateDateTime = new DateTime(2021, 5, 24, 10, 47, 39, 158, DateTimeKind.Local), UpdateUserId = "System", UserCode = "System", UserName = "超级管理员" },
+                        new { Id = 2, Age = 23, CreateDateTime = new DateTime(2021, 5, 24, 10, 47, 39, 158, DateTimeKind.Local), CreateUserId = "System", Password = "123456", Sex = 1, UpdateDateTime = new DateTime(2021, 5, 24, 10, 47, 39, 158, DateTimeKind.Local), UpdateUserId = "System", UserCode = "admin", UserName = "普通管理员" },
+                        new { Id = 3, Age = 25, CreateDateTime = new DateTime(2021, 5, 24, 10, 47, 39, 158, DateTimeKind.Local), CreateUserId = "System", Password = "345923", Sex = 2, UpdateDateTime = new DateTime(2021, 5, 24, 10, 47, 39, 158, DateTimeKind.Local), UpdateUserId = "System", UserCode = "345923", UserName = "小红" }
                     );
                 });
 #pragma warning restore 612, 618
