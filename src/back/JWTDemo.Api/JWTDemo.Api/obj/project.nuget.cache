@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jJ8MkWqfqYTP35xsfLQqBJ4sCEoiDfy/wCeDHD+p0qeg9o7sOv5gbbGZCpqPaWQo45uszCryyEztQSyNQSdoUA==",
+  "dgSpecHash": "yFZC9pQgjdsGxt0lW8H4CROekGjXecf1AjbyZ3llxugE0ZG1fm/xOs3JwkI1J3iK4s57TH1ZK0nPmvQG0K4mZA==",
   "success": true,
   "projectFilePath": "E:\\身份认证\\JWTDemo\\src\\back\\JWTDemo.Api\\JWTDemo.Api\\JWTDemo.Api.csproj",
   "expectedPackageFiles": [
